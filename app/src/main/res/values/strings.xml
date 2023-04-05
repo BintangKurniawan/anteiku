@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Anteiku</string>
+
+    <string-array name="daftarminum">
+        <item>Latte</item>
+        <item>Cappucino</item>
+        <item>Americano</item>
+        <item>Espresso</item>
+        <item>Macchiato</item>
+        <item>Cold Brew</item>
+    </string-array>
+</resources>

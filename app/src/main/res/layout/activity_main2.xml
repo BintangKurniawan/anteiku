@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/anteiku"
+        android:id="@+id/img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Pemesan: "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img"/>
+    <TextView
+        android:id="@+id/nama_pemesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img" />
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email pemesan: "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nama_pemesan" />
+    <TextView
+        android:id="@+id/email_pemesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nama_pemesan" />
+    <TextView
+        android:id="@+id/nohp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No hp pemesan: "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email" />
+    <TextView
+        android:id="@+id/no_telpon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email" />
+    <TextView
+        android:id="@+id/tgl_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal :"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nohp" />
+    <TextView
+        android:id="@+id/tgl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nohp" />
+    <TextView
+        android:id="@+id/minum_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minuman: "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tgl_tx" />
+    <TextView
+        android:id="@+id/minum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tgl_tx" />
+    <TextView
+        android:id="@+id/makanan_n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Makanan :"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/minum_tx" />
+    <TextView
+        android:id="@+id/makanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/minum_tx" />
+    <TextView
+        android:id="@+id/bayar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pembayaran :"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/makanan_n" />
+    <TextView
+        android:id="@+id/byr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/makanan_n" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

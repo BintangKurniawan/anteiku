@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Pemesan"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nama_pemesan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Email Pemesan"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nama_pemesan" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:id="@+id/email_pemesan"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/email"/>
+
+            <TextView
+                android:id="@+id/notel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="No Hp Pemesan"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/email_pemesan" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nomor hp"
+                android:id="@+id/notelpon"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/notel"/>
+
+            <TextView
+                android:id="@+id/tgl"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Tanggal pesanan"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/notelpon" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="DD/MM/YYYY"
+                android:inputType="date"
+                android:id="@+id/tanggal"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/tgl"/>
+
+            <TextView
+                android:id="@+id/minum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Daftar Minuman"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tanggal" />
+
+            <Spinner
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/daftarminum"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="10dp"
+                android:id="@+id/daftarminuman"
+                app:layout_constraintTop_toBottomOf="@id/minum"/>
+
+            <TextView
+                android:id="@+id/makanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Daftar Makanan"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/daftarminuman" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sandwich"
+                android:id="@+id/checkbox_food1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/makanan"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cake"
+                android:layout_marginStart="5dp"
+                android:id="@+id/checkbox_food2"
+                app:layout_constraintStart_toEndOf="@id/checkbox_food1"
+                app:layout_constraintTop_toBottomOf="@id/makanan"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bakery"
+                android:layout_marginStart="5dp"
+                android:id="@+id/checkbox_food3"
+                app:layout_constraintStart_toEndOf="@id/checkbox_food2"
+                app:layout_constraintTop_toBottomOf="@id/makanan"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Banana Fried"
+                android:layout_marginStart="5dp"
+                android:id="@+id/checkbox_food4"
+                app:layout_constraintStart_toEndOf="@id/checkbox_food3"
+                app:layout_constraintTop_toBottomOf="@id/makanan"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pembayaran"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/checkbox_food4"
+                android:id="@+id/tx_bayar"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="10dp"
+                android:id="@+id/pembayaran"
+                app:layout_constraintTop_toBottomOf="@id/tx_bayar"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Cash"
+                    android:text="Cash"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Debet"
+                    android:text="Debet"/>
+            </RadioGroup>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pesan Sekarang"
+                android:id="@+id/button_psn"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pembayaran" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
